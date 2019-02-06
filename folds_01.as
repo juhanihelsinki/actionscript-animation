@@ -1,6 +1,6 @@
 ﻿package{
-	import flash.events.Event;
-	import flash.display.Sprite;
+    import flash.events.Event;
+    import flash.display.Sprite;
     import flash.display.StageAlign;
     import flash.display.StageScaleMode;
     import flash.events.*;
