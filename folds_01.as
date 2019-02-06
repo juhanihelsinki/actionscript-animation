@@ -12,9 +12,9 @@
 
 	public class folds_01  extends Sprite {
 		private var url:String = "ateena_03.mp3";
-        private var soundFactory:Sound;
-        private var channel:SoundChannel;
-        private var positionTimer:Timer;
+        	private var soundFactory:Sound;
+        	private var channel:SoundChannel;
+        	private var positionTimer:Timer;
 		private var astia: Sprite = new Sprite();
 		private var pallot:Array = [];
 		private var k:uint = 0;
@@ -25,14 +25,13 @@
 		public function folds_01() {
 			addEventListener(Event.ADDED_TO_STAGE, onAdded);
 			var request:URLRequest = new URLRequest(url);
-            soundFactory = new Sound();
-            //soundFactory.addEventListener(IOErrorEvent.IO_ERROR, ioErrorHandler);
-            soundFactory.load(request);
-            channel = soundFactory.play(15000,20);
+            		soundFactory = new Sound();
+            		//soundFactory.addEventListener(IOErrorEvent.IO_ERROR, ioErrorHandler);
+            		soundFactory.load(request);
+            		channel = soundFactory.play(15000,20);
 		}
 		
 		function onAdded(e:Event):void {
-			
 			addEventListener(Event.ENTER_FRAME, liikutaPalloja);
 			stage.addEventListener(MouseEvent.MOUSE_MOVE, rotate);
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, reportKeyDown);
